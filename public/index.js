@@ -5,7 +5,7 @@ const body = {
     email: "verdeclos@gmail.com",
     role: "Junior Web Developer",
     notes: "Proficient in Javascript, HTML, CSS and the M.E.R.N. tech stack",
-    submission_url: "",
+    submission_url: "https://juniorwebdevapplication.netlify.app",
     portfolio_url: "https://carlosgreenpersonalsite.com",
     resume_url: "https://carlosgreenpersonalsite.com/PDFS,Resume.pdf",
   },
