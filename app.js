@@ -1,13 +1,16 @@
-const express = require("express");
+const express, {Router} = require("express");
+const serverless = require("serverless-http")
 const path = require("path");
 const cors = require("cors");
 const fetch = require("node-fetch");
 const app = express();
 const PORT = process.env.PORT || 3000;
+const router = Router()
 
 console.log("fetch", fetch);
 
 app.use(express.static("public"));
+app.use("/api/", router)
 app.use(cors());
 app.use(express.json());
 app.get("/", (req, res) => {
